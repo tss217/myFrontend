@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-content: center;
+}
+
+body{
+  background: url('/src/assets/bg.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.ctn{
+  margin-left: 290px;
+
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero{
+
+  width: 530px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.GitInfo{
+
+  width: 290px;
+  margin: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.LinkDinInfo{
+
+  width: 160px;
+  margin: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo{
+  width: 160px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rIcon{
+  
+  display: flex;
+  width: 200px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+h1{
+   font-size: clamp(40px, 8vw, 128px);
+  font-weight: 400;
+  color: aliceblue;
+}
+h2{
+  font-size: 36px;
+  font-weight: 200;
+  color: aliceblue;
+}
+.nh3{
+  font-size: 32px;
+  font-weight: 500;
+  color: aliceblue
+}
+
+.nh3:hover{
+  color:#b488ff
+}
+
+h3{
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: 300;
+  color: aliceblue;
+}
+
+.btn{
+  font-size: 20px;
+  font-weight: 400;
+  color:  #202020;
+  
+  width: 270px;
+  height: 45px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  background: #5d00ff;
+  color: #fff;
+}
+
+
+@media (max-width: 480px) {
+  
+  .ctn {
+    margin-left: 0;
+    padding: 20px;
+    height: auto;
+  }
+
+  .hero {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 84px;
+    padding-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .logo {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0.5rem;
+  }
+
+  .rIcon {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .GitInfo,
+  .LinkDinInfo {
+    width: 70%;
+  }
+
+}
